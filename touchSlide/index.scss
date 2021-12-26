@@ -1,0 +1,76 @@
+@mixin test-base ($alpha) {
+    height: 10%;
+    background-color: rgba(blue,$alpha);
+}
+
+body{
+    margin: 0 auto;
+    width: 100%;
+    min-height: 400px;
+}
+
+#asideButton {
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    top: 0%;
+    left: 0%;
+    cursor: pointer;
+    background-color: white;
+    z-index: 1;
+}
+
+header {
+    @include test-base(0.5);
+    height: 100px;
+}
+
+nav {
+    @include test-base(0.4);
+    li {
+        list-style: none;
+    }
+}
+
+content {
+    .first {
+        height: 200px;
+        background: white;
+    }
+    div {
+        @include test-base(0.3);
+    }
+}
+
+aside {
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    z-index: 5;
+    transition: all 0.5s ease-in-out;
+    $asideWidth: 30%;
+
+    #asideContent { 
+        top: 0%;
+        width: $asideWidth;
+        height: 100%;
+        background-color: rgba(blue,0.5);
+        display: inline-block;
+
+        li {
+            list-style: none;
+        }
+    }
+    #asideCancel {
+        position: inherit;
+        width: (100% - $asideWidth);
+        height: 100%;
+        display: inline-block;
+    }
+}
+
+footer {
+    @include test-base(0.1);
+}

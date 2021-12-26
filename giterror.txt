@@ -1,0 +1,11 @@
+21/12/06
+
+git commit 시 error 발생
+fatal: cannot lock ref 'HEAD': unable to resolve 
+reference 'refs/heads/master': reference broken
+
+해결 : rm .git/refs/heads/master
+       git fetch
+
+From https://github.com/glitter1221/react-practice
+ * [new branch]      master     -> origin/master 

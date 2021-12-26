@@ -1,0 +1,19 @@
+21/12/14
+Error: useRoutes() may be used only in the context of a <Router> component.
+
+원인 : Routes를 Router로 감싸지 않음.
+
+해결 : Route로 감싸기 (Router 아래 Routes 아래 Route)
+
+
+Error: [Navbar] is not a <Route> component. All component children of <Routes> must be a <Route> or <React.Fragment>
+
+원인 : Navbar 컴포넌트가 Routes 컴포넌트 안에 들어가 있음. Route 컴포넌트의 자식은 무조건 Route나 React.Fragment>
+
+해결 : Routes랑 형제 노드로 만듦. (Router 아래 Routes와 Navbar)
+
+Error : <Route path="/" component= 'ExercisesList' />
+
+원인 : Routes 사용법이 바뀜.
+
+해결 : <Route path="/" element={ <ExercisesList /> } /> 수정.
