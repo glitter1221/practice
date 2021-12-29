@@ -18,5 +18,8 @@
  6. webpack : webpack base settings
   tech : webpack
 
+ 7. vanila SPA : SPA with vanila Javascript
+  tech : html, css, js
+  
  ?. zoom : video chat
   tech : html, css, ejs, js, webRTC, socket.io
