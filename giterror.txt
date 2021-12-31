@@ -8,3 +8,16 @@ reference 'refs/heads/master': reference broken
 
 해결 : git push origin +master
  에러와 상관없이 강제로 push
+
+
+ 21/12/30
+
+ git add 시 error 발생
+ warning: LF will be replaced by CRLF in zoom/package-lock.json.
+The file will have its original line endings in your working directory        
+warning: LF will be replaced by CRLF in zoom/package.json.
+The file will have its original line endings in your working directory 
+
+이유 : 마지막 줄
+
+해결 : git config (--global) core.autocrlf ture
