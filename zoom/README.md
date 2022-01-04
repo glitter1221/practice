@@ -4,4 +4,4 @@
 
 ### its video chatting with socket.io and webRTC on Websockets
 
-### or just chat
+### or just chat websocket
