@@ -19,4 +19,5 @@ console.log(path.join(__dirname, 'src'));
 
 io.on("connection", (socket) => {
     console.log('socket connected!');
+    // socket.on('index.html');
 });
