@@ -21,5 +21,5 @@
  7. vanila SPA : SPA with vanila Javascript
   tech : html, css, js
   
- ?. zoom : video chat
-  tech : html, css, ejs, js, webRTC, socket.io
+ 8. chatt : real-time chating
+  tech : html, css, js, socket.io
