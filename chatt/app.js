@@ -18,6 +18,8 @@ server.listen(port, () => {
 console.log(path.join(__dirname, 'src'));
 
 io.on("connection", (socket) => {
-    console.log('socket connected!');
-    // socket.on('index.html');
+    socket.on('chatting', (data) => {
+        console.log(data);
+        io.emit('chatting', data);
+    });
 });
