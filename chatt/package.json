@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev" : "nodemon app.js",
+    "start": "nodemon app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
@@ -13,6 +13,7 @@
   "dependencies": {
     "express": "^4.17.2",
     "moment": "^2.29.1",
+    "ngrok": "^4.2.2",
     "nodemon": "^2.0.15",
     "socket.io": "^4.4.0"
   }
