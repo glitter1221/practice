@@ -21,7 +21,7 @@ html, body {
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    padding: 0.5rem;
+    padding: 0.5rem 2rem;
 }
 
 .user-container label {
@@ -32,7 +32,16 @@ html, body {
 .user-container input {
     border-radius: 3px;
     border: none;
-    height: 100%;
+    height: 70%;
+}
+
+.sideToggleBtn {
+    position: absolute;
+    right: 2%;
+    font-size: 3rem;
+    z-index: 10;
+    cursor: pointer;
+    transition: 0.1s all;
 }
 
 .display-container {
@@ -72,7 +81,7 @@ html, body {
 }
 
 .chatting-list li {
-    width: 90%;
+    width: 60%;
     padding: 0.3rem;
     display: flex;
     justify-content: flex-start;

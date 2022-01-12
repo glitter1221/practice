@@ -8,12 +8,7 @@ const chatlist = document.querySelector('.chatting-list');
 const chatInput = document.querySelector('.chatting-input');
 const sendButton = document.querySelector('.send-button');
 const displayContainer = document.querySelector(".display-container");
-
-chatInput.addEventListener('keypress', (event) => {
-    if(event.keyCode === 13) {
-        send();
-    }
-})
+const sideToggleBtn = document.querySelector('.sideToggleBtn');
 
 function send() {
     const param = {
@@ -25,6 +20,12 @@ function send() {
 }
 
 sendButton.addEventListener('click', send);
+
+chatInput.addEventListener('keypress', (event) => {
+    if(event.keyCode === 13) {
+        send();
+    }
+})
 
 socket.on('chatting', (data) => {
     const { name, msg, time } = data;
