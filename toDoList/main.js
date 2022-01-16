@@ -1,4 +1,4 @@
-let input = document.querySelector('#add');
+let input = document.querySelector('#todo');
 let btn = document.querySelector('#btn');
 let list = document.querySelector("#list");
 let el = document.getElementsByTagName('li');
