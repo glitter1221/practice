@@ -15,9 +15,19 @@ reference 'refs/heads/master': reference broken
  git add 시 error 발생
  warning: LF will be replaced by CRLF in zoom/package-lock.json.
 The file will have its original line endings in your working directory        
-warning: LF will be replaced by CRLF in zoom/package.json.
+warning: LF will be rgeplaced by CRLF in zoom/package.json.
 The file will have its original line endings in your working directory 
 
 이유 : 마지막 줄
 
 해결 : git config (--global) core.autocrlf true
+
+ 22/01/22
+
+ git commit 시 error 발생
+ fatal: cannot lock ref 'HEAD': unable to 
+resolve reference 'refs/heads/master': reference broken
+
+ 이유 : ?
+
+ 해결 : ?
