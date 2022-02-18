@@ -31,3 +31,12 @@ resolve reference 'refs/heads/master': reference broken
  이유 : ?
 
  해결 : ?
+
+ 22/02/18
+
+ error: update_ref failed for ref 'refs/remotes/origin/main': 
+ cannot lock ref 'refs/remotes/origin/main': unable to resolve reference 'refs/remotes/origin/main': reference broken
+
+ 이유 : .git에서 branch가 많아 충돌이 발생한 것
+
+ 해결 : refs/remotes/origin/main 안의 파일 전부 삭제
