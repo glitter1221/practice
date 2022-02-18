@@ -15,7 +15,7 @@ reference 'refs/heads/master': reference broken
  git add 시 error 발생
  warning: LF will be replaced by CRLF in zoom/package-lock.json.
 The file will have its original line endings in your working directory        
-warning: LF will be rgeplaced by CRLF in zoom/package.json.
+warning: LF will be replaced by CRLF in zoom/package.json.
 The file will have its original line endings in your working directory 
 
 이유 : 마지막 줄
