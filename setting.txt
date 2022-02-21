@@ -65,9 +65,8 @@ when : 단축키로 액션이 실행되는 조건입니다. explorerViewletFocus
     (6-1) npm i eslint-config-airbnb -D
     (6-2) npx i prettier eslint-plugin-node eslint-config-node -D (nodejs eslint)
     (7) eslint 설정
-    (7-1) eslint를 -g로 설치했을 경우 eslint --init
-    (7-2) eslint를 그냥 설치했을 경우 cd node_modules/ 후에 eslint --init
-    (7-3) 설정을 다 하면 eslintrc.js 생성됨.
+    (7-1) eslint --init 후 옵션들 설정.
+    (7-2) 설정을 다 하면 eslintrc.js 생성됨.
     (8) eslintrc.js 추가 내용
     (8-1) extends: 'airbnb', 'prettier',
     (8-2) plugins: 'prettier'
