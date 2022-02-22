@@ -58,6 +58,17 @@ when : 단축키로 액션이 실행되는 조건입니다. explorerViewletFocus
 12. ESLint, Prettier : code 정리
     (1) setting 들어가서 format on save 체크, 파일 저장할 때 Prettier 자동 적용
     (2) Single Quote 체크, 큰따옴표 전부 작은 따옴표로 변경
+        "liveSassCompile.settings.formats":[
+        {
+            "format": "compressed", // defalt는 "expanded",
+            "extensionName": ".min.css", // defalt는 ".css",
+            "savePath": null // 저장 경로, defalt는 null
+        }
+    ],
+    "liveSassCompile.settings.generateMap": false,
+    "editor.formatOnSave": true,
+    "prettier.singleQuote": true,
+
     (3) (sudo) npm i eslint (-g)
     (4) npm init -y
     (5) npm i prettier eslint-plugin-prettier eslint-config-prettier -D
@@ -68,17 +79,21 @@ when : 단축키로 액션이 실행되는 조건입니다. explorerViewletFocus
     (7-1) eslint --init 후 옵션들 설정.
     (7-2) 설정을 다 하면 eslintrc.js 생성됨.
     (8) eslintrc.js 추가 내용
-    (8-1) extends: 'airbnb', 'prettier',
-    (8-2) plugins: 'prettier'
-    (8-3) rules: {
-    quotes: ['error', 'single'], // (2)와 맞추기 위한 설정
-    'no-unused-vars': 'warn', // var 안 씀, 경고만 출력 실무에선 error
-    'prettier/prettier': 'error', // prettier에 위배되면 실행 안 됨
-    'no-console': 'off', // console에 나오지 않음이 off?
-    'func-names': 'off', // arrow func 이름 없어도 아무 표시 없음
-    'object-shorthand': 'off', // ?
-    'class-methods-use-this': 'off', // this를 사용하는 class method 아무 표시 없음
-    }
+  extends: ['eslint:recommended', 'airbnb', 'prettier'],
+  parserOptions: {
+    ecmaVersion: 'latest',
+  },
+  plugins: ['prettier'],
+  rules: {
+    quotes: ['error', 'single'],
+    'no-unused-vars': 'warn',
+    'prettier/prettier': 'warn',
+    'no-console': 'off',
+    'func-names': 'off',
+    'object-shorthand': 'off',
+    'class-methods-use-this': 'off',
+  },
+  
     (9) eslint 실행 안 될시 console에서 eslint . 하면 해당 dir 파일 전부 검사
 
 13. JavaScript (ES6) code snippets & ES7+ React/Redux/React-Native snippets : 자동완성기능
