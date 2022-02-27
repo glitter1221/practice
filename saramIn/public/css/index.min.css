@@ -1,1 +1,1 @@
-.body{margin:0 auto}.mobileBtn{text-align:center;width:90%;font-size:1.5rem;font-weight:900;color:gray;background:#d3d3d3;margin:1rem;padding:.1rem}
+body{width:80%;margin:0 auto}.header{display:flex;justify-content:space-between}.header img{width:100px;height:30px}.topNav{padding-top:.5rem}footer{background:#f4f6f6}hr{height:.1rem;border-width:0;background:#eaeded}.mobileBtn{text-align:center;width:90%;font-size:1rem;border:1px solid #d5dede;background:#eaeded;margin:1rem auto;padding:.5rem 0}

@@ -1,14 +1,37 @@
-.body {
+body {
+  width: 80%;
   margin: 0 auto;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  img {
+    width: 100px;
+    height: 30px;
+  }
+}
+
+.topNav {
+  padding-top: 0.5rem;
+}
+
+footer {
+  background: #f4f6f6;
+}
+
+hr {
+  height: 0.1rem;
+  border-width: 0;
+  background: #eaeded;
 }
 
 .mobileBtn {
   text-align: center;
   width: 90%;
-  font-size: 1.5rem;
-  font-weight: 900;
-  color: gray;
-  background: lightgray;
-  margin: 1rem;
-  padding: 0.1rem;
+  font-size: 1rem;
+  border: 1px solid #d5dede;
+  background: #eaeded;
+  margin: 1rem auto;
+  padding: 0.5rem 0;
 }

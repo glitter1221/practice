@@ -8,13 +8,18 @@
     <title>사람인 복사</title>
 </head>
 <body>
-    <header>
-        <img src="./public/image/logo.png" alt="로고 이미지">
-        <input type="submit" placeholder="검색어를 입력하세요">
-        <input type="button" value="로그인">
-        <input type="button" value="회원가입">
+    <header class="header">
+        <div class="topLogo">
+            <img src="./public/image/logo.png" alt="로고 이미지">
+            <input class="search" type="submit" placeholder="검색어를 입력하세요">
+        </div>
+        <div class="login">
+            <a class="loginLink" href="">로그인</a>
+            <a class="newAccLink" href="">회원가입</a>
+        </div>
     </header>
-    <nav>
+
+    <nav class="topNav">
         <nav>
             드롭다운 메뉴
             <div>채용정보</div>
@@ -75,37 +80,37 @@
         <input type="button" value="TOP ▲">
     </sidebar>
 
-    <section>
+    <section class="jobSection">
         <div>플래티넘</div>
         <div></div>
-    </section>
+    </sectionc>
 
-    <section>
+    <section class="jobSection">
         <div>프라임</div>
         <div></div>
     </section>
     
-    <section>
+    <section class="jobSection">
         <div>스페셜</div>
         <div></div>
     </section>
     
-    <section>
+    <section class="jobSection">
         <div>스페셜 핫 배너</div>
         <div></div>
     </section>
 
-    <section>
+    <section class="jobSection">
         <div>으뜸</div>
         <div></div>
     </section>
 
-    <section>
+    <section class="jobSection">
         <div>알짜</div>
         <div></div>
     </section>
 
-    <section>
+    <section class="jobSection">
         <div>나래</div>
         <div></div>
     </section>
@@ -188,6 +193,7 @@
 
         <div class="mobileBtn">모바일 버전 보기</div>
 
+        <br>
     </footer>
 </body>
 </html>
