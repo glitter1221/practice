@@ -4,15 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WORDLE game</title>
-    <style>
-        input {
-            width: 50px;
-            height: 50px;
-            font-size: 40px;
-            text-align: center;
-        }
-    </style>
+    <link rel="stylesheet" href="index.min.css">
+    <title>Wordle game</title>
 </head>
 <body>
     <input type="text" class="input">
@@ -22,37 +15,6 @@
     <input type="text" class="input">
     <button>제출</button>
 
-    <script>
-        let answer = 'abcde';
-        document.querySelector('button').addEventListener('click', () => {
-            
-            let input = document.querySelectorAll('.input');
-
-            for(let i = 0; i < 5; i++) {
-                if(input[0].value == answer[0]) {
-                    input[0].style.background = 'green';
-                } else if (answer.includes(input[0].value)) {
-                    input[0].style.background = 'yellow';
-                } else {
-                    input[0].style.background = 'lightgrey';
-                }
-
-                input[i].classList.remove('input');
-            }
-
-            let template = `<div>
-                <input class="input">
-                <input class="input">
-                <input class="input">
-                <input class="input">
-                <input class="input">
-            </div>`;
-            document.querySelector('body').insertAdjacentHTML('beforeend', template);
-
-            // 위치까지 맞으면 green box
-            // 위치는 틀리면 yellow box
-            // 둘 다 아니면 lightgrey box
-        });
-    </script>
+    <script src="index.js"></script>
 </body>
 </html>

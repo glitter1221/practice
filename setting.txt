@@ -111,3 +111,4 @@ when : 단축키로 액션이 실행되는 조건입니다. explorerViewletFocus
     (8) SVG Previewer
     (9) CSS Grid Snippets
     (10) CSS flexbox CheatSheet
+    (11) Markdown Preview Enhanced
