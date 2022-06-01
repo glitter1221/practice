@@ -1,4 +1,5 @@
 let answer = 'abcde';
+
 document.querySelector('button').addEventListener('click', () => {
     
     let input = document.querySelectorAll('.input');
@@ -30,13 +31,13 @@ document.querySelector('button').addEventListener('click', () => {
         }
     }
 
-    let template = `<div>
-        <input class="input">
-        <input class="input">
-        <input class="input">
-        <input class="input">
-        <input class="input">
-    </div>`;
+    let template = `
+        <input type="text" class="input">
+        <input type="text" class="input">
+        <input type="text" class="input">
+        <input type="text" class="input">
+        <input type="text" class="input">
+    `;
 
     document.querySelector('body').insertAdjacentHTML('beforeend', template);
 
