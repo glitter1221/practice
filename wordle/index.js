@@ -23,6 +23,9 @@ document.querySelector('button').addEventListener('click', () => {
         // input[i].classList.remove('input');
     }
 
+    let contents = document.getElementsByClassName('contents');
+    console.log(contents[0]);
+
     document.querySelector('contents').insertAdjacentHTML('beforeend', template);
 
     // 위치까지 맞으면 green box
