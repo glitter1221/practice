@@ -5,18 +5,20 @@ answerLine[0].classList.add('answerLine');
 
 document.querySelector('button').addEventListener('click', () => {
     
-    let input = document.querySelectorAll('.input');
+    let input = document.getElementsByClassName('input');
+    input.map = disabled = true;
+    
 
-    for(let i = 0; i < 5; i++) {
-        if(input[i].value === answer[i]) {
-            input[i].style.background = 'green';
-        } else if (answer.includes(input[i].value)) {
-            input[i].style.background = 'yellow';
-        } else {
-            input[i].style.background = 'red';
-        }
-        // input[i].classList.remove('input');
-    }
+    // for(let i = 0; i < 5; i++) {
+    //     if(input[i].value === answer[i]) {
+    //         input[i].style.background = 'green';
+    //     } else if (answer.includes(input[i].value)) {
+    //         input[i].style.background = 'yellow';
+    //     } else {
+    //         input[i].style.background = 'red';
+    //     }
+    //     answerLine[i].classList.remove('answerLine');
+    // }
     
     // document.querySelector('contents').insertAdjacentHTML('beforeend', template);
 
