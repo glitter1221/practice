@@ -3,7 +3,11 @@ let answer = 'abcde';
 let answerLine = document.getElementsByClassName('contents');
 answerLine[0].classList.add('answerLine');
 
-document.querySelector('button').addEventListener('click', () => {
+document.getElementById('retry').addEventListener('click', () => {
+    location.reload();
+})
+
+document.getElementById('submit').addEventListener('click', () => {
     
     let input = document.getElementsByClassName('input');
     input.map = disabled = true;
