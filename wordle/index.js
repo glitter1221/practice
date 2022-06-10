@@ -5,11 +5,15 @@ answerLine[0].classList.add('answerLine');
 
 document.getElementById('retry').addEventListener('click', () => {
     location.reload();
+    alert("재도전!");
 })
 
 document.getElementById('submit').addEventListener('click', () => {
     
+
     let input = document.getElementsByClassName('input');
+
+    // getElementsByClassName은 Object라 forEach 안됨, disabled는 하나씩 하면 가능
 
     // for(let i = 0; i < 5; i++) {
     //     if(input[i].value === answer[i]) {
