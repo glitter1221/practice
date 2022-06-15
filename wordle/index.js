@@ -1,7 +1,7 @@
 let answer = 'abcde';
 
-let answerLine = document.getElementsByClassName('contents');
-answerLine[0].classList.add('answerLine');
+let contents = document.getElementsByClassName('contents');
+contents[0].classList.add('answerLine');
 
 document.getElementById('retry').addEventListener('click', () => {
     location.reload();
@@ -10,8 +10,10 @@ document.getElementById('retry').addEventListener('click', () => {
 
 document.getElementById('submit').addEventListener('click', () => {
     
-
-    let input = document.getElementsByClassName('input');
+    let answerLine = 0;
+    for(let i in contents) {
+        contents[i].classList.add('answerLine');
+    }
 
     // getElementsByClassName은 Object라 forEach 안됨, disabled는 하나씩 하면 가능
 
