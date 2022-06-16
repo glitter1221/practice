@@ -10,7 +10,6 @@ document.getElementById('retry').addEventListener('click', () => {
 
 document.getElementById('submit').addEventListener('click', () => {
     
-    let answerLine = 0;
     for(let i in contents) {
         contents[i].classList.add('answerLine');
     }
@@ -27,8 +26,6 @@ document.getElementById('submit').addEventListener('click', () => {
     //     }
     //     answerLine[i].classList.remove('answerLine');
     // }
-    
-    // document.querySelector('contents').insertAdjacentHTML('beforeend', template);
 
     /*
     만들어야 할 기능 목록
